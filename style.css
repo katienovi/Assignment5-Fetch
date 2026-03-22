@@ -1,0 +1,67 @@
+/*
+  Name: Katie Williams
+  Date: 03.22.26
+  CSC 372-01
+
+  This is the style.css page for my github repository gallery project. It includes styling for the main body, h1,
+  the search container and its button, the searchbar, and the individual cards to display the info for each repository.
+*/
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    color: #9AD2CB;
+}
+
+a {
+    color: #219ebc;
+}
+
+
+.search-container{
+    display: flex;
+    margin: auto;
+    width: 900px;
+}
+
+
+.search-container button {
+  float: right;
+  padding: 6px 10px 4px;
+  background: #ddd;
+  font-size: 17px;
+  border-color: #9AD2CB;
+  border-style: solid;
+  background-color: #9AD2CB;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.galleryInfo{
+    background-color: #D7EBBA;
+    border-radius: 12px;
+    border: 2px solid;
+    border-color:#9AD2CB;
+    width: 300px;
+    padding: 20px;
+}
+
+
+#repo-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#searchbar {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #D7EBBA;
+}
