@@ -89,6 +89,16 @@ and uses another fetch to get the repos used languages.
         const galleryCard = document.createElement('div');
         galleryCard.classList.add('galleryInfo');
 
+        //Creating an element for the github icon
+        const headerIcon = document.createElement('div');
+        headerIcon.classList.add('repo-icon');
+
+        //Creating an icon --> using Font Awesome to display it and appending it to the top of the card.
+        const icon = document.createElement('i');
+        icon.classList.add('fa-brands', 'fa-github');
+
+        galleryCard.appendChild(icon);
+
         //Making a heading to display the name of the repo and adding it to our card via a hyperlink.
         const a = document.createElement('a');
         const linkText = document.createElement('h4');
@@ -97,7 +107,7 @@ and uses another fetch to get the repos used languages.
         a.appendChild(linkText);
         a.title = repo.name;
         a.href = repo.html_url;
-    
+
         galleryCard.appendChild(a);
 
         //Making a paragraph to display the description of the repo and adding it to our card.
