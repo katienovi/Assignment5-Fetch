@@ -161,7 +161,7 @@ and uses another fetch to get the repos used languages.
 
               languages.textContent = 'Languages: ' + languageText;
 
-              //If there are no languages, displays that there are non in the card.
+              //If there are no languages, displays that there are none in the card.
               if (languagesList.length == 0){
                 languages.textContent = 'Languages: None';
               }
